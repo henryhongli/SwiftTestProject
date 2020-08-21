@@ -1,0 +1,57 @@
+PODS:
+  - DropDown (2.3.13)
+  - IQKeyboardManagerSwift (6.0.5)
+  - Kingfisher (5.9.0):
+    - Kingfisher/Core (= 5.9.0)
+  - Kingfisher/Core (5.9.0)
+  - lottie-ios (3.1.6)
+  - PKHUD (5.3.0)
+  - ReactiveCocoa (10.0.0):
+    - ReactiveSwift (~> 6.0)
+  - ReactiveSwift (6.0.0)
+  - Realm (3.20.0):
+    - Realm/Headers (= 3.20.0)
+  - Realm/Headers (3.20.0)
+  - RealmSwift (3.20.0):
+    - Realm (= 3.20.0)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - DropDown
+  - IQKeyboardManagerSwift (~> 6.0.0)
+  - Kingfisher (~> 5.9.0)
+  - lottie-ios (~> 3.1.5)
+  - PKHUD
+  - ReactiveCocoa
+  - ReactiveSwift (~> 6.0.0)
+  - RealmSwift (= 3.20.0)
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - DropDown
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - lottie-ios
+    - PKHUD
+    - ReactiveCocoa
+    - ReactiveSwift
+    - Realm
+    - RealmSwift
+    - SnapKit
+
+SPEC CHECKSUMS:
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  IQKeyboardManagerSwift: c14eca30f6001457d6ddf25e313f23fb6578c41c
+  Kingfisher: ff98240aebb7302bdc4f1ecd701761030ce18b16
+  lottie-ios: 85ce835dd8c53e02509f20729fc7d6a4e6645a0a
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
+  ReactiveCocoa: 6d4c37ba236f5d9a7a55b2172cd09f19ba85f574
+  ReactiveSwift: 24b7ed245617bbfd30ee0c87779b6c64ac1b4518
+  Realm: 8b2ca5bc6479a91f379b6b42b5922e396cd5ba5a
+  RealmSwift: 1949ef26a279e1845bd51d591b9103adfcd121df
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 4abc32460e1f763997eb3fdb7e5d7c697756dd46
+
+COCOAPODS: 1.9.1

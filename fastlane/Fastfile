@@ -1,0 +1,51 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Description of what the lane does"
+time = Time.new
+timeString = time.strftime("%Y-%m-%d_%H")
+output_name = "#{timeString}"
+before_all do
+puts "hello,this is before all lane"
+end
+  lane :debug do
+puts "开始打包测试环境"
+     gym(
+        scheme: "SwiftTestProject",
+        export_method: "ad-hoc",
+        configuration:"Debug",
+        output_directory: "/Users/dg/Desktop/包文件/大富翁测试包",  
+        output_name: "Debug_#{output_name}"  # ipa文件名
+
+    )
+     
+  end
+ lane :product do
+ puts "开始打包生产环境"
+ gym(
+ 
+    scheme: "SwiftTestProject",
+    export_method: "ad-hoc",
+    configuration:"Release",
+    output_directory: "/Users/dg/Desktop/包文件/大富翁测试包",  
+    output_name: "Release_#{output_name}"  # ipa文件名
+
+   )
+
+  end
+end
